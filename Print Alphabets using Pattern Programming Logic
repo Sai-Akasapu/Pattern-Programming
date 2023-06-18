@@ -1,0 +1,106 @@
+public class AlphabetPattern {
+    public static void main(String[] args) {
+        // Pattern for letter A
+        System.out.println("Letter A:");
+        for (int i = 1; i <= 5; i++) {
+            for (int j = 1; j <= 5 - i; j++) {
+                System.out.print(" ");
+            }
+            for (int k = 1; k <= 2 * i - 1; k++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        
+        // Pattern for letter B
+        System.out.println("\nLetter B:");
+        for (int i = 1; i <= 7; i++) {
+            for (int j = 1; j <= 4; j++) {
+                if ((i == 1 || i == 4 || i == 7) || (j == 1 && i <= 3) || (j == 4 && i >= 5)) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+        
+        // Pattern for letter C
+        System.out.println("\nLetter C:");
+        for (int i = 1; i <= 7; i++) {
+            for (int j = 1; j <= 5; j++) {
+                if ((j == 1 && (i != 1 && i != 7)) || (i == 1 && j > 1 && j < 5) || (i == 7 && j > 1 && j < 4)) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+        
+        // Pattern for letter D
+        System.out.println("\nLetter D:");
+        for (int i = 1; i <= 7; i++) {
+            for (int j = 1; j <= 4; j++) {
+                if ((j == 1 && i != 7) || (i == 1 && j > 1 && j < 4) || (i == 7 && j > 1 && j < 4) || (j == 4 && i != 1 && i != 7)) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+        
+        // Pattern for letter E
+        System.out.println("\nLetter E:");
+        for (int i = 1; i <= 7; i++) {
+            for (int j = 1; j <= 4; j++) {
+                if ((i == 1 || i == 4 || i == 7) || (j == 1 && i != 1 && i != 7)) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+        
+        // Pattern for letter F
+        System.out.println("\nLetter F:");
+        for (int i = 1; i <= 7; i++) {
+            for (int j = 1; j <= 4; j++) {
+                if ((i == 1 || i == 4) || (j == 1 && i != 1)) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+        
+        // Pattern for letter G
+        System.out.println("\nLetter G:");
+        for (int i = 1; i <= 7; i++) {
+            for (int j = 1; j <= 5; j++) {
+                if ((j == 1 && (i != 1 && i != 7)) || (i == 1 && j > 1 && j < 5) || (i == 7 && j > 1 && j < 4) || (j == 5 && (i > 1 && i < 5)) || (j == 4 && i == 5)) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+        
+        // Pattern for letter H
+        System.out.println("\nLetter H:");
+        for (int i = 1; i <= 7; i++) {
+            for (int j = 1; j <= 4; j++) {
+                if (j == 1 || j == 4 || i == 4) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
